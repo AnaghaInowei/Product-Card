@@ -59,10 +59,13 @@ body {
 }
 
 .bold {
-    font-family: 'Fraunces' sans-serif;
+    font-family: "Fraunces", serif;
     font-weight: 700;
     padding: 1rem;
     text-align: left;
+    font-size: xx-large;
+    word-spacing:  1px;
+    line-height: 25px;
 }
 
 .floral, h3 {
@@ -80,6 +83,55 @@ body {
     text-align: left;
 }
 
+.price {
+    display: flex;
+    flex-direction: row;
+    row-gap: 0.4rem;
+    justify-content: center;
+    
+}
+
+.new {
+    color: var(--dark-cyan);
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: xx-large;
+    font-style: normal;
+}
+
+.old {
+    color: var(--dark-grayish-blue);
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: small;
+    text-decoration: line-through;
+    font-style: normal;
+    padding: 0.5rem;
+}
+
+.button {
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    margin-top: 15px;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: var(--very-dark-blue);
+}
+
+@media (max-width: 542px) {
+    .img img {
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .detail {
+        border-radius: 0px 0px 5px 5px;
+    }
+}
 
 .attribution {
     font-size: 11px; text-align: center;
